@@ -1,4 +1,4 @@
-# java_android-navigator_app
+# Distributable Navigation App (Android and Java)
 Application developed for academic purposes and implements a navigator for android.
 
 This application is able to draw a colored line from your current position to a destination you wish by just tapping on the map
