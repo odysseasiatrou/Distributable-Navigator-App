@@ -14,12 +14,12 @@ This readme file will soon be updated with more details.
 Firstly before proceeding to the details of this project , let's first clearly mention what is a distributed environment for the 
 newcomers .As i have already mentioned few lines above it was a project developed for a course during my academical studies . Thus , i 
 have clear view of what many newcomers whould understand about this app . So let's define what is a distributed environment or more 
-accurate what is a distributed system and then we will go further on what is the environment it is operating in .
+accurate what is a distributed system and then we will go on further analysis with what is the environment it is operating in .
 
 Definition of Distributed System from techopedia :
 
-A distributed system is a network that consists of autonomous computers that are connected using a distribution middleware. They help in 
-sharing different resources and capabilities to provide users with a single and integrated coherent network.
+A distributed system is a network that consists of autonomous computers that are connected using a distribution middleware. They help 
+in sharing different resources and capabilities to provide users with a single and integrated coherent network.
 
 Let's now proceed on what is this actually describing and let's talk in terms of what the environment will be . So :
 
@@ -33,8 +33,29 @@ Keyword No 2 :
 It uses a distribution middleware . It refers to brokers and software that runs in all PCs to support the communication inside the 
 network . One very popular middleware in the java world is CORBA . 
 
-Map-Reducer
+Keyword No 3 :
+
+It provides a single and intergrated coherent network . This is the basis of the concept of distributed systems , a network of computers
+that operate and produce results as it would be if it was one single pc . The distribution of operations improves the overall 
+performance of an information system because of using the availability of more than one CPUs .
+
+The Mapper, the Reducer, the Master and the anroid view is one logical part of the distributable app .
 
 Mapper
 
+TO-DO
 
+Reducer
+
+TO-DO
+
+Master
+
+TO-DO
+
+AndroidClient
+
+TO-DO
+
+
+.
