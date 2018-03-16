@@ -36,7 +36,7 @@ network . One very popular middleware in the java world is CORBA .
 Keyword No 3 :
 
 It provides a single and intergrated coherent network . This is the basis of the concept of distributed systems , a network of computers
-that operate and produce results as it would be if it was one single pc . The distribution of operations improves the overall 
+that operate and produce results as it would be with one single pc . The distribution of operations improves the overall 
 performance of an information system because of using the availability of more than one CPUs .
 
 The Mapper, the Reducer, the Master and the anroid view is one logical part of the distributable app .
