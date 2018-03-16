@@ -41,15 +41,37 @@ performance of an information system because of using the availability of more t
 
 The Mapper, the Reducer, the Master and the anroid view is one logical part of the distributable app .
 
-Mapper
-
-TO-DO
-
-Reducer
-
-TO-DO
-
 Master
+
+The Master node has the following classes running on it :
+
+EuclideanMetric :
+
+The EuclideanMetric class is a custom way to calculate the distance between two places on the map using the L2 norm .
+
+DirectionsObject :
+
+The DirectionsObject is a class used to set the data needed every time for the main app to process in order to produce results .
+These data are the coordinations a json that processes it as a string and a list of strings that contain the information existed in the
+json file .
+
+Comparator :
+
+The Comparator class is used to compare the coordinations of a given position on the map depending on the lattitude and longtitude that
+this has .
+
+Master :
+
+The Master class is used for the main operations of the app . Firstly , this class searches for cached results inside a simple 
+ArrayList structure . Whether the result exists it will be returned or it will make a new request to all the MapWorker nodes and then 
+it will send the results to the ReduceWorkers . It is developed for three MapWorkers and one ReduceWorker . In case the Map-Reduce
+will not return any result it will make a new request to the MapWorker to get the result from GoogleAPI .
+
+ReduceWorker
+
+TO-DO
+
+MapWorker
 
 TO-DO
 
