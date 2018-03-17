@@ -20,7 +20,7 @@ Definition of Distributed System from techopedia :
 
 A distributed system is a network that consists of autonomous computers that are connected using a distribution middleware. They help 
 in sharing different resources and capabilities to provide users with a single and integrated coherent network.
-
+ 
 Let's now proceed on what is this actually describing and let's talk in terms of what the environment will be . So :
 
 Keyword No 1 :
@@ -65,19 +65,40 @@ Master :
 The Master class is used for the main operations of the app . Firstly , this class searches for cached results inside a simple 
 ArrayList structure . Whether the result exists it will be returned or it will make a new request to all the MapWorker nodes and then 
 it will send the results to the ReduceWorkers . It is developed for three MapWorkers and one ReduceWorker . In case the Map-Reduce
-will not return any result it will make a new request to the MapWorker to get the result from GoogleAPI .
+will not return any result it will make a new request to the MapWorker to get the result from GoogleAPI . Finally creates a new instance
+of the EuclideanMetric class to peak the route that directs quicker to the destination .
 
-ReduceWorker
+ReduceWorker :
 
-TO-DO
+The ReduceWorker node has the following classes running on it :
 
-MapWorker
+DirectionsObject :
 
-TO-DO
+It is the same as the one described for the master node .
+
+Reduce_Worker :
+
+This class recieves tuples sent from the mapper nodes which consist of  <(Source LatLng, Destination LatLng),DirectionsObject> and then
+uses the reduce method and with the assistance of lambda expressions, that Java8 provides, removes the duplicates .
+
+MapWorker :
+
+The MapWorker node has the following classes running on it :
+
+DirectionsObject :
+
+It is the same as the one described for the master node .
+
+Mapper :
+
+The Mapper class except for the fact that it implements the calls that are being made to the GoogleAPI , also implements the concept
+of the map part of the map-reduce framework . The idea is that from a given pair of keys and their values it produces new intermediate
+pair . Another important part of the description for the Mapper class is that it could make some database calls where it could store the
+Directions but there some files that have been used for this purpose instead .
 
 AndroidClient
 
-TO-DO
+
 
 
 .
